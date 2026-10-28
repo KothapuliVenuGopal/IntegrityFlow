@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <h1>IntegrityFlow — Academic Integrity & Fair Review Platform</h1>
+    <p style="font-size: 1.15rem; color: var(--text-muted); font-style: italic;">
+        Similarity is a signal, not a verdict.
+    </p>
+    <p>
+        Welcome to IntegrityFlow. This system assists academic administrators, instructors, reviewers, and learners
+        in managing similarity reports, chain-of-custody evidence, conflict-free assignments, due-process decisions,
+        and appeals.
+    </p>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+    <div class="card">
+        <h3>Assessments & Submissions</h3>
+        <p>Review cohort assessments, student submissions, and flagged similarity reports.</p>
+        <a href="/academics/assessments/" class="btn">View Assessments</a>
+    </div>
+
+    <div class="card">
+        <h3>Case Management</h3>
+        <p>Investigate active cases, audit timelines, reviewer decisions, and learner appeals.</p>
+        <a href="/cases/" class="btn">View Cases</a>
+    </div>
+
+    <div class="card">
+        <h3>Administrator Portal</h3>
+        <p>Manage users, roles, system integrity rules, and database records.</p>
+        <a href="/admin/" class="btn">Open Admin</a>
+    </div>
+</div>
+{% endblock %}
